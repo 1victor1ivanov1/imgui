@@ -18,7 +18,17 @@ project "ImGui"
 		"imstb_rectpack.h",
 		"imstb_textedit.h",
 		"imstb_truetype.h",
-		"imgui_demo.cpp"
+		"imgui_demo.cpp",
+		"backends/imgui_impl_glfw.cpp",
+		"backends/imgui_impl_glfw.h",
+		"backends/imgui_impl_opengl3.cpp",
+		"backends/imgui_impl_opengl3.h"
+	}
+
+	includedirs
+	{
+		"./",
+		"%{IncludeDirs.GLFW}"
 	}
 
 	filter "system:windows"
